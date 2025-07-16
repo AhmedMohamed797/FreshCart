@@ -1,6 +1,5 @@
 import {
   faAddressCard,
-  faEnvelope,
   faHeart,
   faUser,
 } from "@fortawesome/free-regular-svg-icons";
@@ -11,10 +10,8 @@ import {
   faCartShopping,
   faChevronDown,
   faEllipsis,
-  faMagnifyingGlass,
   faPerson,
   faPersonDress,
-  faPhone,
   faRightFromBracket,
   faSpinner,
   faSuitcaseMedical,
@@ -43,7 +40,7 @@ export default function Navbar() {
       <header className="text-sm">
         <div className="container">
           {/* Top Navbar */}
-          <div className="hidden items-center justify-between border-b border-gray-300/30 py-2 lg:flex">
+          {/* <div className="hidden items-center justify-between border-b border-gray-300/30 py-2 lg:flex">
             <ul className="flex items-center gap-5 *:flex *:items-center *:gap-2">
               <li>
                 <FontAwesomeIcon icon={faPhone} />
@@ -79,7 +76,7 @@ export default function Navbar() {
                 </select>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Main Navigation */}
           <nav className="flex items-center justify-between py-6">
@@ -89,7 +86,7 @@ export default function Navbar() {
               </Link>
             </h1>
 
-            <search className="relative hidden lg:block">
+            {/* <search className="relative hidden lg:block">
               <input
                 type="text"
                 placeholder="Search for products..."
@@ -99,7 +96,7 @@ export default function Navbar() {
                 icon={faMagnifyingGlass}
                 className="absolute top-1/2 right-2 -translate-1/2"
               />
-            </search>
+            </search> */}
 
             <ul className="hidden items-center gap-6 lg:flex">
               <li>
@@ -138,7 +135,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
 
-              <li>
+              {/* <li>
                 <NavLink
                   to={"account"}
                   className={({ isActive }) => {
@@ -148,7 +145,7 @@ export default function Navbar() {
                   <FontAwesomeIcon className="text-lg" icon={faUser} />
                   <span className="text-sm">Account</span>
                 </NavLink>
-              </li>
+              </li> */}
 
               {!token ? (
                 <>
@@ -278,7 +275,7 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link className="flex items-center gap-2" to={""}>
+                  <Link className="flex items-center gap-2" to={"/categories"}>
                     <FontAwesomeIcon
                       className="text-primary-600 text-xl"
                       fixedWidth
@@ -294,12 +291,12 @@ export default function Navbar() {
               <li>
                 <NavLink to={"/"}>Home</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to={"/recently-added"}>Recently Added</NavLink>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <NavLink to={"/featured-products"}>Featured Products</NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to={"/deals"}>Deals</NavLink>
               </li>
@@ -329,7 +326,7 @@ export default function Navbar() {
                 />
               </div>
 
-              <search className="relative">
+              {/* <search className="relative">
                 <input
                   type="text"
                   placeholder="Search for products..."
@@ -339,7 +336,7 @@ export default function Navbar() {
                   icon={faMagnifyingGlass}
                   className="absolute top-1/2 right-2 -translate-1/2"
                 />
-              </search>
+              </search> */}
 
               <div>
                 <h2 className="text-xl font-semibold">Main Menu</h2>

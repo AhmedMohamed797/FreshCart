@@ -301,7 +301,7 @@ export default function Navbar() {
                 <NavLink to={"/featured-products"}>Featured Products</NavLink>
               </li>
               <li>
-                <NavLink to={"/offers"}>Offers</NavLink>
+                <NavLink to={"/deals"}>Deals</NavLink>
               </li>
               <li>
                 <NavLink to={"/brands"}>Brands</NavLink>

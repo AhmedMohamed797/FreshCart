@@ -12,11 +12,11 @@ import Orders from "./Pages/Orders/Orders";
 import ForgetPassword from "./Pages/ForgetPassword/ForgetPassword";
 import ResetCode from "./Pages/ResetCode/ResetCode";
 import ResetPassword from "./Pages/ResetPassword/ResetPassword";
-import Favourites from "./Pages/Favourites/Favourites";
 import Checkout from "./Pages/Checkout/Checkout";
 import Categories from "./Pages/Categories/Categories";
 import Cart from "./Pages/Cart/Cart";
 import Brands from "./Pages/Brands/Brands";
+import Deals from "./Pages/Deals";
 import { ToastContainer } from "react-toastify";
 import ProductsProvider from "./Context/Products.context";
 import CategoriesProvider from "./Context/Categories.context";
@@ -84,14 +84,6 @@ function App() {
           element: <ResetPassword />,
         },
         {
-          path: "favourites",
-          element: (
-            <ProtectedRoute>
-              <Favourites />
-            </ProtectedRoute>
-          ),
-        },
-        {
           path: "checkout",
           element: (
             <ProtectedRoute>
@@ -114,6 +106,10 @@ function App() {
         {
           path: "brands",
           element: <Brands />,
+        },
+        {
+          path: "deals",
+          element: <Deals />,
         },
         {
           path: "*",

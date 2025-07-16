@@ -13,6 +13,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import { useContext } from "react";
 import { CartContext } from "./../../Context/Cart.context";
 import { WishlistContext } from "../../Context/Wishlist.context";
+import { Link } from "react-router";
 
 export default function ProductInfo({ productDetails }) {
   const {
@@ -140,9 +141,12 @@ export default function ProductInfo({ productDetails }) {
               Add to Cart
             </button>
 
-            <button className="btn hover:bg-primary-600 text-primary-600 flex-1 rounded-lg border border-gray-300/50 bg-white px-6 py-3 transition-colors duration-500 hover:text-white">
-              Buy Now
-            </button>
+            <Link
+              to={"/"}
+              className="btn text-center hover:bg-primary-600 text-primary-600 flex-1 rounded-lg border border-gray-300/50 bg-white px-6 py-3 transition-colors duration-500 hover:text-white"
+            >
+              <button className="">Continue Shopping</button>
+            </Link>
           </div>
 
           {/* Features */}

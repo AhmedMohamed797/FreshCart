@@ -31,9 +31,10 @@ export default function HomeDeals() {
     return <Loading />;
   }
 
-  const deals = Products
-    .filter((product) => product.priceAfterDiscount)
-    .slice(5, 10);
+  const deals = Products.filter((product) => product.priceAfterDiscount).slice(
+    5,
+    10,
+  );
 
   return (
     <>
@@ -60,7 +61,7 @@ export default function HomeDeals() {
               </div>
             </div>
             <div className="text-primary-600 hover:text-primary-700 space-x-3 transition-colors duration-200">
-              <Link to={"/deals"} className="">
+              <Link to="/deals" className="">
                 View All Deals
               </Link>
               <FontAwesomeIcon icon={faArrowRight} />
